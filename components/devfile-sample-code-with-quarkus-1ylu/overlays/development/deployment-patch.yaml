@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-1ylu
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/christianvogt-tenant/my-app/devfile-sample-code-with-quarkus-1ylu@sha256:c63e46950f4f3c9d01f356954f423c81d96eebe48787035db6fd90ddfa43b5b2
+        name: container-image
+        resources: {}
+status: {}
